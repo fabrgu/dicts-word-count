@@ -25,7 +25,7 @@ def count_words_counter(file_name):
         words = line.split(" ")
         for word in words:
             word_counter[word] = word_counter[word] + 1
-                
+
     file.close()
     for word in word_counter:
         print(f"{word} {word_counter[word]}")
