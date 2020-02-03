@@ -1,4 +1,7 @@
 # put your code here.
+import sys
+
+
 def count_words(file_name):
     file = open(file_name)
     word_dict = {}
@@ -13,4 +16,5 @@ def count_words(file_name):
         print(f"{word} {word_dict[word]}")
 
 
-count_words("twain.txt")
+file_name = sys.argv[1]
+count_words(file_name)
