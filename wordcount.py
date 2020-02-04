@@ -47,6 +47,16 @@ def count_words_sorted(file_name):
 
 # def count_word_sorted_count(file_name):
 #     word_dict = get_word_dict(file_name)
+#     count_to_words = {}
+
+#     for word in word_dict:
+#         word_count = word_dict[word]
+#         if word_count in count_to_words:
+#             word_list = count_to_words[word_count]
+#             count_to_words[word_count] = word_list.append(word)
+#         else:
+#             count_to_words[word_count] = [word]
+
 
 file_name = sys.argv[1]
 count_words(file_name)
